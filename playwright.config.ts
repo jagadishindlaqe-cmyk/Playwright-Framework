@@ -23,7 +23,7 @@ export default defineConfig({
 
   /* Shared settings for all browsers */
   use: {
-    headless: false, // Opens the browser
+    headless: true, // Opens the browser
 
     // baseURL: 'https://www.saucedemo.com',
 
