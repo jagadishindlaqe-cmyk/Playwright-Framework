@@ -6,7 +6,8 @@ test("verify multiple window",async({page})=>{
         await page.waitForLoadState();
         console.log("mainwindow",await page.title());
         console.log("childwindow",await page.title());
-        await expect(newPage.getByText('elementalselenium')).toBeVisible();
+        await expect(newPage).toHaveTitle('New Window');
+        //await expect(newPage.getByText('elementalselenium')).toBeVisible();
         await newPage.close();
 
 
