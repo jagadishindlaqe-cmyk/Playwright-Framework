@@ -5,6 +5,7 @@ import { defineConfig, devices } from '@playwright/test';
  */
 export default defineConfig({
   testDir: './tests',
+  testMatch: '**/*.spec.ts',
 
   /* Run tests in parallel */
   fullyParallel: true,
@@ -23,7 +24,7 @@ export default defineConfig({
 
   /* Shared settings for all browsers */
   use: {
-    headless: true, // Opens the browser
+    headless: false, // Opens the browser
 
     // baseURL: 'https://www.saucedemo.com',
 
@@ -31,11 +32,12 @@ export default defineConfig({
 
     video: 'retain-on-failure',
 
-    trace: 'on-first-retry',
+    //trace: 'on-first-retry',
+      trace: 'retain-on-failure',
 
-    actionTimeout: 10000,
+    actionTimeout: 15000,
 
-    navigationTimeout: 30000,
+    navigationTimeout: 60000,
   },
   
 

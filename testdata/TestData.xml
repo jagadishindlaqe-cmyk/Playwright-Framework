@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testData>
+    <username>admin</username>
+    <password>admin123</password>
+    <invoiceNumber>INV001</invoiceNumber>
+    <amount>5000</amount>
+    <status>PAID</status>
+</testData>
